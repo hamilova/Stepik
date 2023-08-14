@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from conftest import item_contains_add_to_cart_button
 
 
-def test_dd_to_cart_button(browser):
+def test_add_to_cart_button(browser):
     item_contains_add_to_cart_button(browser)
     time.sleep(30)
     add_to_cart_button = WebDriverWait(browser, 60).until(
